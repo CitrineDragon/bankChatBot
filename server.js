@@ -9,25 +9,22 @@ const server = http.createServer((req, res) => {
   const params = querystring.parse(url.parse(req.url).query);
   console.log(page);
 
+  // read file and write to browser
+  const readHelper = (filename, contentType) => {
+    fs.readFile(filename, function (err, data) {
+      res.writeHead(200, { 'Content-Type': contentType });
+      res.write(data);
+      res.end();
+    });
+  };
+
   //Landing page request
   if (page == '/') {
-    fs.readFile('index.html', function (err, data) {
-      res.writeHead(200, { 'Content-Type': 'text/html' });
-      res.write(data);
-      res.end();
-    });
+    readHelper('index.html', 'text/html');
   } else if (page == '/transfer') {
-    fs.readFile('transfer.html', function (err, data) {
-      res.writeHead(200, { 'Content-Type': 'text/html' });
-      res.write(data);
-      res.end();
-    });
+    readHelper('transfer.html', 'text/html');
   } else if (page == '/replacement') {
-    fs.readFile('replacement.html', function (err, data) {
-      res.writeHead(200, { 'Content-Type': 'text/html' });
-      res.write(data);
-      res.end();
-    });
+    readHelper('replacement.html', 'text/html');
   }
 
   // API Request
@@ -38,7 +35,6 @@ const server = http.createServer((req, res) => {
           console.log(`Error reading file from disk: ${err}`);
         } else {
           const questions = JSON.parse(data);
-
           res.writeHead(200, { 'Content-Type': 'application/json' });
           res.end(JSON.stringify(questions[params.index]));
         }
@@ -56,11 +52,7 @@ const server = http.createServer((req, res) => {
 
   // return the main.js file when requested
   else if (page == '/js/main.js') {
-    fs.readFile('js/main.js', function (err, data) {
-      res.writeHead(200, { 'Content-Type': 'text/javascript' });
-      res.write(data);
-      res.end();
-    });
+    readHelper('js/main.js', 'text/javascript');
   }
 
   //Return 404 error if page is not found
