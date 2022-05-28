@@ -1,0 +1,127 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1003)'%3e%3c/rect%3e%3cpath d='M1440 0L970.3199999999999 0L1440 267.88z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M970.3199999999999 0L1440 267.88L1440 341.38L636.23 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M636.23 0L1440 341.38L1440 386.37L437.4 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M437.4 0L1440 386.37L1440 445.65L168.79999999999995 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 560L101.99 560L0 390.82z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 390.82L101.99 560L263.04 560L0 255.54z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 255.53999999999996L263.04 560L355.41 560L0 183.18999999999997z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 183.18999999999994L355.41 560L1103.78 560L0 110.07999999999994z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1002'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1003'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  color: white;
+  height: 100vh;
+  max-width: 60rem;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.text {
+  font-size: 2.5rem;
+  color: red;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+.page {
+  display: flex;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1003)'%3e%3c/rect%3e%3cpath d='M1440 0L970.3199999999999 0L1440 267.88z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M970.3199999999999 0L1440 267.88L1440 341.38L636.23 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M636.23 0L1440 341.38L1440 386.37L437.4 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M437.4 0L1440 386.37L1440 445.65L168.79999999999995 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 560L101.99 560L0 390.82z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 390.82L101.99 560L263.04 560L0 255.54z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 255.53999999999996L263.04 560L355.41 560L0 183.18999999999997z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 183.18999999999994L355.41 560L1103.78 560L0 110.07999999999994z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1002'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1003'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  display: block;
+  font-size: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1 {
+  margin: 10rem 0 0 0;
+}
+
+.container {
+  background: #666;
+  color: black;
+  height: 50rem;
+  width: 30rem;
+  border: 0.1rem solid #888;
+  border-radius: 1rem;
+  margin: 10rem 0 0 0;
+}
+
+.chatHeader {
+  background: #333;
+  color: lightgrey;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 1rem 1rem 0 0;
+  padding: 0 0 0 1rem;
+}
+
+.chat {
+  background: lightgrey;
+  font-size: 2rem;
+  height: calc(45rem - 0.2rem);
+  width: calc(28rem - 0.4rem);
+  border: 0.1rem solid #333;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.questionArea {
+  background-color: rgba(130, 200, 250, 0.5);
+  width: 100%;
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 0 0 01rem 0;
+  text-align: center;
+}
+
+.answerArea > button {
+  background-color: rgba(130, 250, 190, 0.5);
+  width: 100%;
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 0 0 01rem 0;
+}
+
+.reset {
+  font-size: 2rem;
+  padding: 0.25rem 0.5rem;
+  margin: 4rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

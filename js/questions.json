@@ -1,0 +1,147 @@
+[
+  {
+    "text": "How can I help you today?",
+    "answers": [
+      {
+        "text": "Billing Question",
+        "next": "billing"
+      },
+      {
+        "text": "Make a transfer",
+        "next": "transfer"
+      },
+      {
+        "text": "Update information",
+        "next": "info"
+      }
+    ]
+  },
+  {
+    "text": "Billing Question",
+    "answers": [
+      {
+        "text": "When will my funds be available?",
+        "next": "funds"
+      },
+      {
+        "text": "Can my late fee be waived?",
+        "next": "lateFee"
+      },
+      {
+        "text": "Stop a payment",
+        "next": "stop"
+      }
+    ]
+  },
+  {
+    "text": "Make a Transfer",
+    "answers": [
+      {
+        "text": "Checkings to Savings",
+        "next": "cToS"
+      },
+      {
+        "text": "Savings to Checking",
+        "next": "sToC"
+      },
+      {
+        "text": "Zelle transfer",
+        "next": "zelle"
+      }
+    ]
+  },
+  {
+    "text": "Update Information",
+    "answers": [
+      {
+        "text": "Lost or Stolen Card",
+        "next": "stolen"
+      },
+      {
+        "text": "Replacement Card",
+        "next": "replacement"
+      },
+      {
+        "text": "Hours of Operation",
+        "next": "hours"
+      }
+    ]
+  },
+  {
+    "text": "When will my funds be available?",
+    "answers": [
+      {
+        "text": "We'll give you access to your money, eventually..."
+      }
+    ]
+  },
+  {
+    "text": "Can my late fee be waived?",
+    "answers": [
+      {
+        "text": "No, stop asking!"
+      }
+    ]
+  },
+  {
+    "text": "Can I stop a payment?",
+    "answers": [
+      {
+        "text": "When was the payment made and what was the amount?"
+      }
+    ]
+  },
+  {
+    "text": "Checkings to Savings",
+    "answers": [
+      {
+        "text": "Continue to move to the transfers page to complete a transfer",
+        "next": "transferPage"
+      }
+    ]
+  },
+  {
+    "text": "Savings to Checking",
+    "answers": [
+      {
+        "text": "Continue to move to the transfers page to complete a transfer",
+        "next": "transferPage"
+      }
+    ]
+  },
+  {
+    "text": "Zelle Transfer",
+    "answers": [
+      {
+        "text": "Continue to move to the Zelle transfers page to complete a transfer",
+        "next": "transferPage"
+      }
+    ]
+  },
+  {
+    "text": "Lost or Stolen Card",
+    "answers": [
+      {
+        "text": "Continue to complete the form for a replacement card.",
+        "next": "replacementPage"
+      }
+    ]
+  },
+  {
+    "text": "Replacement Card",
+    "answers": [
+      {
+        "text": "Continue to complete the form for a replacement card.",
+        "next": "replacementPage"
+      }
+    ]
+  },
+  {
+    "text": "Hours of Operation",
+    "answers": [
+      {
+        "text": "We are open Monday thru Friday 9am - 6pm, Saturday & Sunday 10am - 5pm."
+      }
+    ]
+  }
+]
