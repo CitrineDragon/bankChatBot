@@ -215,10 +215,12 @@ async function renderQuestion() {
           break;
 
         case 'transferPage':
-          window.location = 'http://localhost:8000/transfer';
+          window.location =
+            'https://citrine-bankchatbot.herokuapp.com//transfer';
           break;
         case 'replacementPage':
-          window.location = 'http://localhost:8000/replacement';
+          window.location =
+            'https://citrine-bankchatbot.herokuapp.com//replacement';
           break;
       }
       renderQuestion();
